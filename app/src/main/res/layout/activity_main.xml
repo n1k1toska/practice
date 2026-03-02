@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onGoToSecondActivity"
+        android:text="Перейти"
+        android:layout_marginBottom="16dp"/>
+    
+    <Button
+        android:id="@+id/buttonProgrammble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Отправить (программный способ)"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ФИО:"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Группа:"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Возраст:"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Оценка за практику:"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/editTextGrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="155dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/lob" />
+</LinearLayout>
