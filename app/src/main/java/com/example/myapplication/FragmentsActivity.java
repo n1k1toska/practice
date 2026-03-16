@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.activity.EdgeToEdge;
@@ -17,6 +18,8 @@ public class FragmentsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_fragments);
@@ -28,17 +31,26 @@ public class FragmentsActivity extends AppCompatActivity {
 
         loadFragment(new StaticFragment());
 
-        // Обработчики кнопок
         btnFragment1.setOnClickListener(v -> loadFragment(new StaticFragment()));
         btnFragment2.setOnClickListener(v -> loadFragment(new DynamicFragment()));
         btnFragment3.setOnClickListener(v -> loadFragment(new ContainerViewFragment()));
+
+        Button btnBackToInput = findViewById(R.id.btnBackToInput);
+        btnBackToInput.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FragmentsActivity.this, InputActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     private void loadFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragmentContainer, fragment);
-        fragmentTransaction.addToBackStack(null); // Добавляем в стек для кнопки "Назад"
+        fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
 }
