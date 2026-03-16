@@ -35,9 +35,9 @@
     <string name="add_schedule" translatable="false">Добавить расписание</string>
     <string name="schedule_success" translatable="false">Время занятия успешно передано: %1$s %2$s</string>
 
-    <string name="static_fragment" translatable="false">Статический фрагмент</string>
-    <string name="dynamic_fragment" translatable="false">Динамический фрагмент</string>
-    <string name="container_view_fragment" translatable="false">FragmentContainerView</string>
+    <string name="static_fragment" translatable="false">Static</string>
+    <string name="dynamic_fragment" translatable="false">Dynamic</string>
+    <string name="container_view_fragment" translatable="false">ContainerView</string>
 
     <string name="fragments" translatable="false">Фрагменты</string>
 </resources>

@@ -1,29 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <!-- Статический фрагмент -->
-    <fragment
-        android:id="@+id/staticFragment"
-        android:name="com.example.myapplication.StaticFragment"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-
-    <!-- Динамический фрагмент будет добавлен через FrameLayout -->
+    <!-- Контейнер для фрагментов -->
     <FrameLayout
-        android:id="@+id/dynamicFragmentContainer"
-        android:layout_width="match_parent"
+        android:id="@+id/fragmentContainer"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- FragmentContainerView -->
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btnFragment1"
+            android:layout_width="110dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/primary_blue"
+            android:text="@string/static_fragment"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnFragment3"
+            android:layout_width="170dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/primary_blue"
+            android:text="@string/container_view_fragment"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnFragment1"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <Button
+            android:id="@+id/btnFragment2"
+            android:layout_width="110dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/primary_blue"
+            android:text="@string/dynamic_fragment"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnFragment3"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
