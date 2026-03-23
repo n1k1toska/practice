@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.practice12;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,6 +12,9 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.activity.EdgeToEdge;
+
+import com.example.myapplication.R;
+
 import java.util.Locale;
 
 public class InputActivity extends AppCompatActivity {

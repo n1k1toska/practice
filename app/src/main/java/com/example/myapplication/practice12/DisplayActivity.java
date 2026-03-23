@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.practice12;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.activity.EdgeToEdge;
 import android.content.Intent;
 import android.widget.Toast;
+
+import com.example.myapplication.R;
 
 public class DisplayActivity extends AppCompatActivity {
 

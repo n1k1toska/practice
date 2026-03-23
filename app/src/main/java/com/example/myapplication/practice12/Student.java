@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.practice12;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.practice12;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+
+import com.example.myapplication.R;
 
 public class FragmentsActivity extends AppCompatActivity {
 

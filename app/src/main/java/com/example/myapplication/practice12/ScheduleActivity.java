@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.practice12;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.activity.EdgeToEdge;
+
+import com.example.myapplication.R;
 
 public class ScheduleActivity extends AppCompatActivity {
     private EditText editTextDay;
