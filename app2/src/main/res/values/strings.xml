@@ -101,4 +101,22 @@
     <string name="headquarters">Штаб-квартира</string>
 
     <string name="developer_logo">Developer</string>
+
+    <!-- Navigation Drawer -->
+    <string name="drawer_open">Открыть меню</string>
+    <string name="drawer_close">Закрыть меню</string>
+    <string name="app_subtitle">Ваша геймерская библиотека</string>
+
+    <!-- Navigation items -->
+    <string name="nav_home">Главная</string>
+    <string name="nav_categories">Категории игр</string>
+    <string name="nav_developers">Разработчики</string>
+    <string name="nav_rules">Правила и гайды</string>
+    <string name="nav_platform">Выбор платформы</string>
+    <string name="nav_other">Другое</string>
+    <string name="nav_bottombar">Bottom Bar Activity</string>
+    <string name="nav_settings">Настройки</string>
+
+    <string name="home_welcome">Добро пожаловать в Геймерскую библиотеку!</string>
+    <string name="home_description">Здесь вы найдете информацию о категориях игр, разработчиках, правилах геймплея и многое другое. Используйте боковое меню для навигации.</string>
 </resources>

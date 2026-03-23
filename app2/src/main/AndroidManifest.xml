@@ -23,6 +23,9 @@
         <activity android:name=".DevelopersActivity" />
         <activity android:name=".RulesActivity" />
         <activity android:name=".PlatformActivity" />
+        <activity
+            android:name=".BottomBarActivity"
+            android:exported="false" />
 
     </application>
 
