@@ -1,3 +1,104 @@
 <resources>
     <string name="app_name">app2</string>
+    <string name="app_name_">Game Library</string>
+    <string name="app_title">🎮 Геймерская библиотека</string>
+
+    <!-- Главное меню -->
+    <string name="categories_button">Категории игр</string>
+    <string name="developers_button">Каталог разработчиков</string>
+    <string name="rules_button">Правила и гайды</string>
+    <string name="platform_button">Выбор платформы</string>
+
+    <!-- Категории -->
+    <string name="categories_title">Выберите категорию игр</string>
+    <string name="category_action">Экшены</string>
+    <string name="category_strategy">Стратегии</string>
+    <string name="category_adventure">Приключения</string>
+    <string name="category_puzzle">Головоломки</string>
+    <string name="category_racing">Гонки</string>
+    <string name="category_rpg">Ролевые игры</string>
+
+    <!-- Игры -->
+    <string name="games_in_category">Игры в категории: %1$s</string>
+    <string name="add_game">Добавить игру</string>
+    <string name="remove_games">Удалить игры</string>
+    <string name="enter_game_name">Введите название игры</string>
+    <string name="game_added">Игра добавлена</string>
+    <string name="games_removed">Игры удалены</string>
+    <string name="select_games_to_remove">Выберите игры для удаления</string>
+
+    <!-- Игры по категориям -->
+    <string name="game_doom">Doom Eternal</string>
+    <string name="game_cod">Call of Duty: Warzone</string>
+    <string name="game_fortnite">Fortnite</string>
+    <string name="game_apex">Apex Legends</string>
+
+    <string name="game_civilization">Civilization VI</string>
+    <string name="game_stellaris">Stellaris</string>
+    <string name="game_age_of_empires">Age of Empires IV</string>
+    <string name="game_company_of_heroes">Company of Heroes 3</string>
+
+    <string name="game_uncharted">Uncharted 4</string>
+    <string name="game_tomb_raider">Rise of the Tomb Raider</string>
+    <string name="game_last_of_us">The Last of Us Part II</string>
+    <string name="game_red_dead">Red Dead Redemption 2</string>
+
+    <string name="game_portal">Portal 2</string>
+    <string name="game_tetris">Tetris Effect</string>
+    <string name="game_lumino">Lumino City</string>
+    <string name="game_monument_valley">Monument Valley</string>
+
+    <string name="game_forza">Forza Horizon 5</string>
+    <string name="game_f1">F1 2023</string>
+    <string name="game_nfs">Need for Speed Unbound</string>
+    <string name="game_dirt">DiRT Rally 2.0</string>
+
+    <string name="game_skyrim">The Elder Scrolls V: Skyrim</string>
+    <string name="game_witcher">The Witcher 3</string>
+    <string name="game_dragon_age">Dragon Age: Inquisition</string>
+    <string name="game_divinity">Divinity: Original Sin 2</string>
+
+    <!-- Разработчики -->
+    <string name="developers_title">Каталог разработчиков игр</string>
+
+    <!-- Правила -->
+    <string name="rules_title">Правила и гайды по играм</string>
+    <string name="general_rules">Общие правила геймплея</string>
+    <string name="general_rules_text">В большинстве игр есть общие правила, которые помогают новичкам освоиться. Всегда читайте инструкции перед началом игры. Изучайте управление в учебных режимах. Не бойтесь проигрывать — это часть процесса обучения. Играйте ответственно и делайте перерывы.</string>
+
+    <string name="multiplayer_etiquette">Этикет в мультиплеере</string>
+    <string name="multiplayer_etiquette_text">В сетевых играх важно соблюдать правила хорошего тона. Не используйте оскорбительный язык в чате. Помогайте новичкам, если можете. Не читерите — это портит игру всем. Уважайте других игроков, даже если они играют против вас.</string>
+
+    <string name="save_progress">Сохранение прогресса</string>
+    <string name="save_progress_text">Регулярно сохраняйте свой прогресс в игре. Используйте облачные сохранения, если они доступны. Создавайте несколько слотов сохранения для разных точек игры. Это поможет избежать потери прогресса при сбоях.</string>
+
+    <string name="hardware_requirements">Требования к железу</string>
+    <string name="hardware_requirements_text">Перед установкой игры проверяйте системные требования. Убедитесь, что у вас достаточно места на диске. Обновляйте драйверы видеокарты для лучшей производительности. Закрывайте фоновые приложения для освобождения ресурсов.</string>
+
+    <string name="in_game_purchases">Покупки в игре</string>
+    <string name="in_game_purchases_text">Будьте осторожны с внутри-игровыми покупками. Устанавливайте лимиты расходов. Используйте родительский контроль для детей. Помните, что платные предметы не всегда дают преимущество в геймплее.</string>
+
+    <string name="your_notes">Ваши личные заметки</string>
+    <string name="notes_hint">Введите свои заметки о стратегиях, тактиках или личных рекомендациях...</string>
+
+    <!-- Платформы -->
+    <string name="platform_title">Выберите игровую платформу</string>
+    <string name="select_platform">Выберите платформу</string>
+    <string name="select_console">Выберите консоль</string>
+    <string name="select_genre">Выберите жанр</string>
+    <string name="selected_platform">Выбрана платформа: %1$s</string>
+    <string name="selected_console">Выбрана консоль: %1$s</string>
+    <string name="selected_genre">Выбран жанр: %1$s</string>
+
+    <!-- Разработчики -->
+    <string name="developer_ea">Electronic Arts</string>
+    <string name="developer_ubi">Ubisoft</string>
+    <string name="developer_blizzard">Blizzard Entertainment</string>
+    <string name="developer_valve">Valve Corporation</string>
+    <string name="developer_rockstar">Rockstar Games</string>
+    <string name="publisher">Издатель</string>
+    <string name="founded">Основан</string>
+    <string name="headquarters">Штаб-квартира</string>
+
+    <string name="developer_logo">Developer</string>
 </resources>

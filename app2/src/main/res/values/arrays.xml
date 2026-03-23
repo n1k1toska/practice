@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_categories">
+        <item>Экшены</item>
+        <item>Стратегии</item>
+        <item>Приключения</item>
+        <item>Головоломки</item>
+        <item>Гонки</item>
+        <item>Ролевые игры</item>
+    </string-array>
+
+    <string-array name="platforms_array">
+        <item>PC</item>
+        <item>PlayStation</item>
+        <item>Xbox</item>
+        <item>Nintendo</item>
+        <item>Android</item>
+        <item>iOS</item>
+    </string-array>
+
+    <string-array name="genres_array">
+        <item>Экшены</item>
+        <item>Стратегии</item>
+        <item>Приключения</item>
+        <item>Головоломки</item>
+        <item>Гонки</item>
+        <item>Ролевые игры</item>
+        <item>Симуляторы</item>
+        <item>Спортивные</item>
+    </string-array>
+</resources>
