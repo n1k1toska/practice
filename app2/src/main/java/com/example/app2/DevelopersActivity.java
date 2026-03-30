@@ -34,32 +34,11 @@ public class DevelopersActivity extends AppCompatActivity {
 
     private void fillDevelopersList() {
         developersList.add(new Developer(
-                getString(R.string.developer_ea),
-                getString(R.string.publisher) + ": EA Sports",
-                getString(R.string.founded) + ": 1982",
-                getString(R.string.headquarters) + ": США",
-                R.drawable.ea_logo
-        ));
-        developersList.add(new Developer(
-                getString(R.string.developer_ubi),
-                getString(R.string.publisher) + ": Ubisoft",
-                getString(R.string.founded) + ": 1986",
-                getString(R.string.headquarters) + ": Франция",
-                R.drawable.ubisoft_logo
-        ));
-        developersList.add(new Developer(
                 getString(R.string.developer_blizzard),
                 getString(R.string.publisher) + ": Activision Blizzard",
                 getString(R.string.founded) + ": 1991",
                 getString(R.string.headquarters) + ": США",
                 R.drawable.blizzard_logo
-        ));
-        developersList.add(new Developer(
-                getString(R.string.developer_valve),
-                getString(R.string.publisher) + ": Valve Corporation",
-                getString(R.string.founded) + ": 1996",
-                getString(R.string.headquarters) + ": США",
-                R.drawable.valve_logo
         ));
         developersList.add(new Developer(
                 getString(R.string.developer_rockstar),

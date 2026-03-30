@@ -36,30 +36,19 @@ public class DevelopersFragment extends Fragment {
     }
 
     private void fillDevelopersList() {
-        String eaName = getString(R.string.developer_ea);
-        String ubiName = getString(R.string.developer_ubi);
-        String blizzardName = getString(R.string.developer_blizzard);
-
         developersList.add(new Developer(
-                eaName,
-                getString(R.string.publisher) + ": EA Sports",
-                getString(R.string.founded) + ": 1982",
+                getString(R.string.developer_rockstar),
+                getString(R.string.publisher) + ": Rockstar Games",
+                getString(R.string.founded) + ": 1998",
                 getString(R.string.headquarters) + ": США",
-                R.drawable.ic_launcher_foreground
+                R.drawable.rockstar_logo
         ));
         developersList.add(new Developer(
-                ubiName,
-                getString(R.string.publisher) + ": Ubisoft",
-                getString(R.string.founded) + ": 1986",
-                getString(R.string.headquarters) + ": Франция",
-                R.drawable.ic_launcher_foreground
-        ));
-        developersList.add(new Developer(
-                blizzardName,
+                getString(R.string.developer_blizzard),
                 getString(R.string.publisher) + ": Activision Blizzard",
                 getString(R.string.founded) + ": 1991",
                 getString(R.string.headquarters) + ": США",
-                R.drawable.ic_launcher_foreground
+                R.drawable.blizzard_logo
         ));
     }
 }
