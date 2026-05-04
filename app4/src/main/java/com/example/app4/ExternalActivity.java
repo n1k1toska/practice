@@ -85,7 +85,6 @@ public class ExternalActivity extends AppCompatActivity {
         }
     }
 
-    // 🔹 ЧТЕНИЕ
     private void readExtFile() {
         String filename = etFileName.getText().toString().trim();
         if (filename.isEmpty()) {

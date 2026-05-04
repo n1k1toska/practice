@@ -79,7 +79,7 @@ public class StudentDbActivity extends AppCompatActivity {
                 return;
             }
             if (dbHelper.deleteStudent(currentSelectedId)) {
-                Toast.makeText(this, "🗑 Удален", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Удален", Toast.LENGTH_SHORT).show();
                 clearFields();
                 loadList();
             }
