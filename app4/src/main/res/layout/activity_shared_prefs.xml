@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Имя пользователя (SharedPreferences)" android:textSize="18sp" android:textStyle="bold" android:layout_marginBottom="16dp"/>
+
+    <EditText android:id="@+id/etUsername" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Введите имя" android:background="#fff" android:padding="10dp" android:layout_marginBottom="8dp"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="16dp">
+        <Button android:id="@+id/btnSavePrefs" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Сохранить"/>
+        <Button android:id="@+id/btnDeletePrefs" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Удалить" android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <TextView android:id="@+id/tvSavedName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Загруженное имя: -" android:textSize="16sp" android:background="#eee" android:padding="16dp"/>
+</LinearLayout>

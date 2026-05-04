@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выбранная дата: не выбрана"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выбранное время: не выбрано"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button android:id="@+id/btnDatePicker" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DatePickerDialog"/>
+    <Button android:id="@+id/btnTimePicker" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TimePickerDialog" android:layout_marginTop="8dp"/>
+    <Button android:id="@+id/btnAlertDialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="AlertDialog (Переход)" android:layout_marginTop="8dp"/>
+    <Button android:id="@+id/btnCustomDialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Custom Dialog (Данные)" android:layout_marginTop="8dp"/>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#ccc" android:layout_marginVertical="20dp"/>
+
+    <Button android:id="@+id/btnStartService" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Запустить таймер (Сервис)"/>
+    <Button android:id="@+id/btnStopService" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Остановить сервис" android:layout_marginTop="8dp"/>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#ccc" android:layout_marginVertical="16dp"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="WorkManager и Потоки" android:textStyle="bold" android:textSize="18sp" android:layout_marginBottom="8dp"/>
+
+    <Button android:id="@+id/btnSequential" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="3 задачи последовательно"/>
+    <Button android:id="@+id/btnParallel" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2 задачи параллельно" android:layout_marginTop="8dp"/>
+    <Button android:id="@+id/btnApi" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Загрузить картинку (API)" android:layout_marginTop="8dp"/>
+
+    <TextView android:id="@+id/tvLog" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Лог выполнения..." android:textSize="13sp" android:background="#eee" android:padding="8dp" android:layout_marginTop="8dp" android:lines="4"/>
+
+    <ImageView android:id="@+id/ivResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:maxHeight="500dp"
+        android:background="#ddd"
+        android:contentDescription="Результат API"/>
+
+</LinearLayout>

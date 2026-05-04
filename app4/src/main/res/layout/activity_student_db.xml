@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:padding="16dp" android:background="#F5F5F5">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Студенты (SQLite - 5 полей)" android:textStyle="bold" android:textSize="18sp" android:layout_marginBottom="12dp"/>
+
+        <EditText android:id="@+id/etFio" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="ФИО" android:layout_marginBottom="8dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/etAge" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Возраст" android:inputType="number"/>
+            <EditText android:id="@+id/etCourse" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Курс" android:inputType="number" android:layout_marginStart="8dp"/>
+        </LinearLayout>
+        <EditText android:id="@+id/etGpa" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Средний балл (GPA)" android:inputType="numberDecimal" android:layout_marginBottom="16dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/btnAdd" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Добавить"/>
+            <Button android:id="@+id/btnUpdate" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Обновить" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="8px">
+            <Button android:id="@+id/btnSearch" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Поиск (По ФИО)"/>
+            <Button android:id="@+id/btnDelete" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Удалить" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvStudents" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp"/>
+    </LinearLayout>
+</ScrollView>
