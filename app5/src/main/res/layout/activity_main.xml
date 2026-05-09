@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F0F0F0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="WebViewLayout">
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1. WebView (Браузер)" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+        <Button android:id="@+id/btnLoadWeb" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Загрузить сайт"/>
+        <WebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="300dp" android:layout_marginTop="8dp" android:background="#fff"/>
+
+        <View android:layout_width="match_parent" android:layout_height="2dp" android:background="#ccc" android:layout_marginVertical="16dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2. Музыка (MediaPlayer)" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+        <Button android:id="@+id/btnPlayPause" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Play / Pause Audio"/>
+        <TextView android:id="@+id/tvAudioStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ожидание..." android:gravity="center" android:layout_marginTop="8dp"/>
+
+        <View android:layout_width="match_parent" android:layout_height="2dp" android:background="#ccc" android:layout_marginVertical="16dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="3. Анимации (ObjectAnimator)" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+        <ImageView android:id="@+id/ivAnim" android:layout_width="100dp" android:layout_height="100dp" android:src="@android:drawable/ic_menu_gallery" android:background="#2196F3" android:layout_gravity="center"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="16dp">
+            <Button android:id="@+id/btnRotate" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Вращение"/>
+            <Button android:id="@+id/btnMove" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Перемещение" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+        <Button android:id="@+id/btnScale" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Увеличение" android:layout_marginTop="4dp"/>
+
+        <View android:layout_width="match_parent" android:layout_height="2dp" android:background="#ccc" android:layout_marginVertical="16dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="4. Уведомления (Notifications)" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+        <Button android:id="@+id/btnNotifyNormal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Обычное уведомление"/>
+        <Button android:id="@+id/btnNotifyDelayed" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Уведомление через 10 сек" android:layout_marginTop="8dp"/>
+
+
+        <View android:layout_width="match_parent" android:layout_height="2dp" android:background="#ccc" android:layout_marginVertical="16dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="5. Content Provider and JSON" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etProviderInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Название элемента (для Провайдера)" android:background="#fff" android:padding="8dp" android:layout_marginBottom="8px"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/btnAddProvider" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text=" Добавить в Провайдер" android:textSize="10sp"/>
+            <Button android:id="@+id/btnGetProvider" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Читать из Провайдера" android:layout_marginStart="4dp" android:textSize="10sp"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#ccc" android:layout_marginVertical="12dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/btnSaveJson" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Записать JSON" android:textSize="10sp"/>
+            <Button android:id="@+id/btnLoadJson" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text=" Загрузить JSON" android:layout_marginStart="4dp" android:textSize="10sp"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/tvProviderResult" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Результат:" android:background="#eee" android:padding="8dp" android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>
