@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             Cursor cursor = getContentResolver().query(MyItemsProvider.CONTENT_URI, null, null, null, null);
 
             if (cursor != null && cursor.moveToFirst()) {
-                StringBuilder sb = new StringBuilder("📥 Данные из Провайдера:\n");
+                StringBuilder sb = new StringBuilder("Данные из Провайдера:\n");
                 do {
                     String name = cursor.getString(cursor.getColumnIndexOrThrow("name"));
                     int id = cursor.getInt(cursor.getColumnIndexOrThrow("id"));
@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
             try {
                 java.io.File file = new java.io.File(getFilesDir(), "data.json");
                 if (!file.exists()) {
-                    tvResult.setText("⚠️ Файл data.json не найден!\nСначала сохраните JSON.");
+                    tvResult.setText("Файл data.json не найден!\nСначала сохраните JSON.");
                     return;
                 }
 

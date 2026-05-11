@@ -29,7 +29,6 @@ public class MyItemsProvider extends ContentProvider {
 
     @Override
     public boolean onCreate() {
-        // Инициализируем БД
         dbHelper = new ItemsDbHelper(getContext());
         database = dbHelper.getWritableDatabase();
         return database != null;
